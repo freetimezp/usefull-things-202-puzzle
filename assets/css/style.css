@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
     background: #2f363e;
 }
 
@@ -26,15 +27,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 470px;
+    width: 320px;
     gap: 10px;
     cursor: grab;
 }
 
 .drag .dragBox {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background: #0003;
 }
 
@@ -62,4 +63,19 @@ body {
     cursor: pointer;
     font-weight: 600;
     border-radius: 10px;
+}
+
+.board {
+    position: relative;
+    display: grid;
+    width: 440px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.board .dropBox {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: #0003;
 }
