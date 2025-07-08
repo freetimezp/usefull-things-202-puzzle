@@ -9,3 +9,57 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f363e;
+}
+
+.drag {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 470px;
+    gap: 10px;
+    cursor: grab;
+}
+
+.drag .dragBox {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #0003;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+}
+
+.reset {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #222;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+}
